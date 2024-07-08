@@ -1,0 +1,148 @@
+ // Common CSS
+ html {
+ 	scroll-behavior: smooth;
+ }
+
+ // Block Name
+ .wp-block-bpsc-section-collection {
+ 	* {
+ 		box-sizing: border-box;
+ 	}
+
+ 	.prefixBlockName {
+ 		display: inline-block;
+ 	}
+
+ 	.icon {
+ 		font-style: inherit;
+ 	}
+
+ 	a {
+ 		text-decoration: none;
+
+ 		&:focus {
+ 			outline: none;
+ 		}
+ 	}
+
+ 	img {
+ 		width: 100%;
+ 		max-width: 100%;
+ 	}
+
+ 	h2,
+ 	h4 {
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+
+ 	.bpscSectionCollection {
+ 		.layoutStyle {
+ 			.mainArea {
+
+ 				a.btn {
+ 					transition-property: all;
+ 					transition-duration: 0.15s;
+ 					transition-timing-function: ease-in-out;
+ 					margin-bottom: 10px;
+ 					display: inline-block;
+ 					text-decoration: none;
+ 					cursor: pointer;
+
+ 					a {
+ 						text-decoration: none;
+ 					}
+ 				}
+ 			}
+
+ 			&.style1 {
+ 				text-align: center;
+
+ 				.mainArea {
+ 					.title {
+ 						width: 90%;
+ 						margin: 0 auto;
+
+ 						@media (max-width: 576px) {
+ 							width: 100%;
+ 						}
+ 					}
+
+ 					.subTitle {
+ 						margin: 20px 0px 20px;
+ 					}
+ 				}
+ 			}
+
+ 			&.style2,
+ 			&.style3 {
+ 				.mainArea {
+ 					display: grid;
+ 					gap: 10px;
+ 					grid-template-columns: repeat(2, 1fr);
+ 					align-items: self-start;
+
+ 					@media (max-width: 768px) {
+ 						grid-template-columns: repeat(1, 1fr);
+ 					}
+
+ 					.buttonArea {
+ 						display: flex;
+ 						align-items: center;
+ 						justify-content: center;
+ 						gap: 10px;
+ 					}
+ 				}
+ 			}
+
+ 			&.style3 {
+ 				.mainArea {
+ 					gap: 20px;
+ 					align-items: center;
+
+ 					.subTitle {
+ 						margin-top: 15px;
+ 					}
+
+ 					.buttonArea {
+ 						gap: 20px;
+ 					}
+ 				}
+
+ 			}
+
+ 			&.style4 {
+ 				.mainArea {
+ 					display: grid;
+ 					grid-template-columns: repeat(2, 1fr);
+ 					align-items: center;
+ 					gap: 15px;
+
+ 					@media (max-width: 768px) {
+ 						grid-template-columns: repeat(1, 1fr);
+ 					}
+
+ 					.subTitle {
+ 						margin: 15px 0px;
+ 					}
+
+ 					.imgArea {
+ 						width: 100%;
+ 						height: 100%;
+
+ 						.img {
+ 							width: 100%;
+ 							height: 100%;
+
+ 							img {
+ 								width: 100%;
+ 								height: 100%;
+ 								object-fit: cover;
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
