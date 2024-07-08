@@ -6,12 +6,12 @@ class BPSCSectionCollection{
 	}
 
 	function enqueueBlockAssets(){
-		wp_register_style( 'fontAwesome', BPSC_DIR_URL . 'assets/css/font-awesome.min.css', [], '6.4.2' ); // Icon
+		
 	}
 
 	function onInit() {
-		wp_register_style( 'bpsc-section-collection-style', BPSC_DIR_URL . 'dist/style.css', [ 'fontAwesome' ], BPSC_VERSION ); // Style
-		wp_register_style( 'bpsc-section-collection-editor-style', BPSC_DIR_URL . 'dist/editor.css', [ 'bpsc-section-collection-style' ], BPSC_VERSION ); // Backend Style
+		
+		wp_register_style( 'bpsc-section-collection-editor-style', BPSC_DIR_URL . 'dist/editor.css', [ ], BPSC_VERSION ); // Backend Style
 
 		register_block_type( __DIR__, [
 			'editor_style'		=> 'bpsc-section-collection-editor-style',

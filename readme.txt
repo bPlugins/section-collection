@@ -113,3 +113,18 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 = 1.0.0 =
 * Initial Release
+
+
+=== External Link ===
+
+Default Dummy url : https://bplugins.com
+Default Dummy Image Url: https://i.ibb.co/PCv97J2/photo-1526170375885-4d8ecf77b99f.jpg
+Our Other plugin Url: https://wordpress.org/plugins/b-blocks
+
+=== Developer Notes ===
+
+Public source code GitHub link for review, study, and contribute.
+
+https://github.com/bPlugins/section-collection
+
+For more information on how to contribute to this plugin, please visit our GitHub repository.
